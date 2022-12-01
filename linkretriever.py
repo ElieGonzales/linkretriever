@@ -33,7 +33,7 @@ for link in links:
         pag.typewrite(link.get_attribute('href'))
         pag.hotkey('return')
         sleep(0.5)
-    if dotext:
+    if dotext.lower() == 'y' or dotext.lower() == 'yes':
         textlink = link.text + " = " + link.get_attribute('href')
         finlinks.append(textlink)
     else:    
