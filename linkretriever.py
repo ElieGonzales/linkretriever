@@ -9,12 +9,14 @@ openlinks = False
 platform = input("please input a platform (Chrome/Firefox/Edge): ")
 dotext = input('do you want the shown text as well? [Y/N]: ')
 
-if platform.lower() == "chrome":
+if platform.lower() == "chrome" or platform.lower() == "google chrome":
     driver = webdriver.Chrome()
-elif platform.lower() == "edge":
+elif platform.lower() == "edge" or platform.lower() == "microsoft edge":
     driver = webdriver.Edge()
-else platform.lower() == "firefox":
+elif platform.lower() == "firefox":
     driver = webdriver.Firefox()
+else:
+    print("please use one of the following platforms: chrome, edge, firefox")
 
 driver.get(website)
 links = driver.find_elements(By.XPATH,"//*[@href]")
