@@ -21,8 +21,8 @@ elif platform.lower() == "firefox":
 else:
     print("please use one of the following platforms: chrome, edge, firefox")
 
-driver.get(website)
-try:   
+try:  
+    driver.get(website)
     links = driver.find_elements(By.XPATH,"//*[@href]")
     links = list(dict.fromkeys(links))
     finstr = ''
