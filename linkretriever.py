@@ -48,5 +48,5 @@ except Exception as error:
     print("An error occured: "+ error)
 finally:
     driver.close()
-    input("press any key to close")
+    input("press enter to close")
 
