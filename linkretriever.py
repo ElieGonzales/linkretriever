@@ -49,4 +49,5 @@ except Exception as error:
 finally:
     driver.close()
     input("press enter to close")
-
+    exit()
+sleep(5)
