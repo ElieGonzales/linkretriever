@@ -13,7 +13,7 @@ if platform.lower() == "chrome":
     driver = webdriver.Chrome()
 elif platform.lower() == "edge":
     driver = webdriver.Edge()
-elif platform.lower() == "firefox":
+else platform.lower() == "firefox":
     driver = webdriver.Firefox()
 
 driver.get(website)
