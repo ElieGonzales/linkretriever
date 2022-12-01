@@ -35,6 +35,6 @@ for link in links:
 
 with open('links.txt','w') as file:
     for i in finlinks:
-        finstr = finstr + i
+        finstr = finstr + i + '\n'
     file.write(finstr)
 driver.close()
