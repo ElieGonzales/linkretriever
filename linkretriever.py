@@ -9,6 +9,9 @@ openlinks = False
 platform = input("please input a platform (Chrome/Firefox/Edge): ")
 dotext = input('do you want the shown text as well? [Y/N]: ')
 
+if website[:7] != "https://":
+    website = "https://" + website
+
 if platform.lower() == "chrome" or platform.lower() == "google chrome":
     driver = webdriver.Chrome()
 elif platform.lower() == "edge" or platform.lower() == "microsoft edge":
