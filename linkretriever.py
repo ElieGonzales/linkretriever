@@ -46,7 +46,7 @@ try:
         file.write(finstr)
 except Exception as error:
     print("An error occured: "+ error)
-
-driver.close()
-input("press any key to close")
+finally:
+    driver.close()
+    input("press any key to close")
 
