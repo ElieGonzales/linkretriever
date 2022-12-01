@@ -29,7 +29,8 @@ for link in links:
         pag.hotkey('return')
         sleep(0.5)
     if dotext:
-        finlinks.append(str(link.text, "=" , link.get_attribute('href')))
+        textlink = link.text + " = " + link.get_attribute('href')
+        finlinks.append(textlink)
     else:    
         finlinks.append(link.get_attribute('href'))
 
