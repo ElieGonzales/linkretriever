@@ -1,8 +1,4 @@
 # linkretriever
-REQUIREMENTS:  
-selenium v4  
-pyautogui  
-time  
 
 at least one of those browsers:  
 Microsoft Edge  
