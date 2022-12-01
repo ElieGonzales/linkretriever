@@ -44,5 +44,9 @@ try:
         for i in finlinks:
             finstr = finstr + i + '\n'
         file.write(finstr)
-finally:        
-    driver.close()
+except Exception as error:
+    print("An error occured: "+ error)
+
+driver.close()
+input("press any key to close")
+
